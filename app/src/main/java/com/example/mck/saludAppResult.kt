@@ -10,5 +10,17 @@ class saludAppResult : AppCompatActivity() {
         binding = ActivitySaludAppResultBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        getIU()
+        binding.back.setOnClickListener { fBack() }
+    }
+
+    private fun fBack() {
+        onBackPressed()
+    }
+
+    private fun getIU() {
+       val bundle = intent.extras
+        val name = bundle?.getString("NAME_KEY")
+        binding.tvName.text = name
     }
 }
