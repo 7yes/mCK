@@ -1,5 +1,6 @@
 package com.example.mck
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mck.databinding.ActivityMainBinding
@@ -10,5 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.btnDetail.setOnClickListener { goDetail() }
+    }
+
+    private fun goDetail() {
+        val intent = Intent(this, DetailActivity::class.java)
+        startActivity(intent)
     }
 }
