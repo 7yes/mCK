@@ -26,24 +26,5 @@
         <include layout="@layout/view_ex_completed" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/viewLoading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="visible"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <include layout="@layout/view_ex_completed_loading" />
-
-        <include layout="@layout/view_ex_completed_loading" />
-
-        <include layout="@layout/view_ex_completed_loading" />
-
-        <include layout="@layout/view_ex_completed_loading" />
-
-        <include layout="@layout/view_ex_completed_loading" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
