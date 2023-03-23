@@ -22,5 +22,6 @@ class DetailActivity : AppCompatActivity() {
 
     private fun showData() {
         binding.viewContainer.isVisible = true
+        binding.viewLoading.isVisible = false
     }
 }
